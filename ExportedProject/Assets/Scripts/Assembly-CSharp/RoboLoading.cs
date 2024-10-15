@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using GoogleMobileAds.Api;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,10 +18,6 @@ public class RoboLoading : MonoBehaviour
 	private bool isAdLoaded;
 
 	private bool isAdShown;
-
-	private InterstitialAd interstitial;
-
-	private AdRequest adRequest;
 
 	private AlertViewController avc;
 
@@ -107,10 +102,6 @@ public class RoboLoading : MonoBehaviour
 	private IEnumerator DoMenu()
 	{
 		yield return new WaitForSeconds(0.1f);
-		if (interstitial != null)
-		{
-			interstitial.Destroy();
-		}
 		Handheld.StartActivityIndicator();
 		SceneController.instance.LoadScene("Main", 0f);
 	}
