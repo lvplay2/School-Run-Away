@@ -2,15 +2,15 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1045 &1
 EditorBuildSettings:
-  serializedVersion: 2
   m_ObjectHideFlags: 0
+  serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Loading.unity
-    guid: 95f0c9a0a9dc44a66a408d2394b7ac61
+    guid: 9bd53abefe69f9f4fa9bd992a7221d6f
   - enabled: 1
     path: Assets/Scenes/Main.unity
-    guid: 95f0c9a0a9dc44a66a408d2394b7ac61
+    guid: 4fdbdd05e26e57d41b7ca8f5326e22e9
   - enabled: 1
     path: Assets/Scenes/Field.unity
     guid: 3ec95f1bcbd204dd5b373676d685e020
