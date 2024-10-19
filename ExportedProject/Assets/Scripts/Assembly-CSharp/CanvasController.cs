@@ -12,6 +12,10 @@ public class CanvasController : MonoBehaviour
 
 	public GameObject panelFinish;
 
+	public GameObject panelHeader;
+
+	public GameObject mobileSimpleStickControl;
+
 	public Text textFinishMessage;
 
 	public Text textFinishScore;
@@ -60,6 +64,8 @@ public class CanvasController : MonoBehaviour
 		string arg = Localizer.LocalizedString("Score:");
 		textFinishScore.text = string.Format("{0} {1:00000000}", arg, score);
 		panelFinish.SetActive(true);
+		panelHeader.SetActive(false);
+		mobileSimpleStickControl.SetActive(false);
 		Text[] array = UnityEngine.Object.FindObjectsOfType<Text>();
 		Text[] array2 = array;
 		foreach (Text text in array2)

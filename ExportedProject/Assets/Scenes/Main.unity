@@ -73613,7 +73613,7 @@ RenderSettings:
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.02
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.29803923, g: 0.29803923, b: 0.29803923, a: 1}
@@ -77887,7 +77887,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Made by Robotani Technologies and decompiled by Mati555
+  m_Text: Made by Robotani Technologies and modded by Mati555
 --- !u!222 &420229741
 CanvasRenderer:
   m_ObjectHideFlags: 0
