@@ -37,15 +37,15 @@ public class CanvasController : MonoBehaviour
 
 	public void ShowScore(float score)
 	{
-		string arg = Localizer.LocalizedString("SCORE");
+		string arg = Localizer.LocalizedString("Score:");
 		textScore.text = string.Format("{0} {1:00000000}", arg, score);
 	}
 
 	public void ShowTimeLeft(float timeLeft)
 	{
 		TimeSpan timeSpan = TimeSpan.FromSeconds(timeLeft);
-		string text = Localizer.LocalizedString("Time Left");
-		string text2 = string.Format("{0} {1:D1}'{2:D2}.{3:D1}", text, timeSpan.Minutes, timeSpan.Seconds, timeSpan.Milliseconds / 100);
+		string text = Localizer.LocalizedString("Time Left:");
+		string text2 = string.Format("{0} {1:D1}:{2:D2}", text, timeSpan.Minutes, timeSpan.Seconds, timeSpan.Milliseconds / 100);
 		textTimeLeft.text = text2;
 	}
 
@@ -57,7 +57,7 @@ public class CanvasController : MonoBehaviour
 	public void ShowPanelFinish(float score, string message)
 	{
 		textFinishMessage.text = Localizer.LocalizedString(message);
-		string arg = Localizer.LocalizedString("SCORE");
+		string arg = Localizer.LocalizedString("Score:");
 		textFinishScore.text = string.Format("{0} {1:00000000}", arg, score);
 		panelFinish.SetActive(true);
 		Text[] array = UnityEngine.Object.FindObjectsOfType<Text>();
